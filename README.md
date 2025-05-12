@@ -37,26 +37,25 @@ password=suasupersecreta
 
 ## 🚀 Como Usar
 
-1. Clone o repositório:
+1. **Clone o repositório:**
 
 ```
 git clone https://github.com/seuusuario/seurepo.git
-cd seurepo
 ```
 
-2. Dê permissão de execução ao script:
+2. **Dê permissão de execução ao script:**
 
 ```
-chmod +x backup_system.sh
+chmod +x www.sh
 ```
 
-3. Execute o script como root:
+3. **Execute o script como root:**
 
 ```
 sudo ./www.sh
 ```
 
-Informe o diretório de destino do backup quando solicitado:
+**Informe o diretório de destino do backup quando solicitado:**
 
 ```
 Caminho do destino do backup (ex: /media/backup): /mnt/hdexterno
@@ -70,11 +69,11 @@ Caminho do destino do backup (ex: /media/backup): /mnt/hdexterno
 
 ## 🛑 Observações Importantes
 
-Evite usar : nos nomes de arquivos — o script já faz isso automaticamente substituindo por -.
+Evite usar `:` nos nomes de arquivos — o script já faz isso automaticamente substituindo por `-`.
 
 Certifique-se de que o dispositivo de destino (HD externo, partição, etc.) está montado e possui espaço suficiente.
 
-O script ignora os bancos padrão do MySQL (information_schema, performance_schema, etc.).
+O script ignora os bancos padrão do MySQL (`information_schema`, `performance_schema`, etc.).
 
 ## 🧪 Testado em:
 

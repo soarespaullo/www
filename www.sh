@@ -32,7 +32,7 @@ SEM_COR="\e[0m"   # SEM COR
 # === VERIFICA SE É ROOT ===
 if [[ "$EUID" -ne 0 ]]; then
   echo -e "${VERMELHO}Este script deve ser executado como root.${SEM_COR}"
-  echo -e "${AMARELO}Execute como:${SEM_COR} sudo ./backup_system.sh"
+  echo -e "${AMARELO}Execute como:${SEM_COR} sudo ./www.sh"
   exit 1
 fi
 

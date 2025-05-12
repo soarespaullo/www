@@ -29,10 +29,9 @@ Este script realiza o **backup automático da pasta `/var/www` e de todos os ban
 Exemplo de `.my.cnf` (proteja com `chmod 600 ~/.my.cnf`):
 
 ```
-ini
 [client]
 user=root
-password=suasupersecreta
+password=SUASENHA
 ```
 
 ---

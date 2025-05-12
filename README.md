@@ -1,4 +1,4 @@
-# 🔄 Backup Automatizado do Sistema (MySQL + /var/www)
+## 🔄 Backup Automatizado do Sistema (MySQL + /var/www)
 
 Este script realiza o **backup automático da pasta `/var/www` e de todos os bancos de dados MySQL** de forma segura, com compressão, verificação de espaço em disco e interface amigável via terminal.
 
@@ -35,6 +35,8 @@ user=root
 password=suasupersecreta
 ```
 
+---
+
 ## 🚀 Como Usar
 
 1. **Clone o repositório:**
@@ -61,11 +63,15 @@ sudo ./www.sh
 Caminho do destino do backup (ex: /media/backup): /mnt/hdexterno
 ```
 
+---
+
 ## 📁 Estrutura dos Arquivos de Backup
 
 - `/mnt/hdexterno/var_www_backup_11-05-2025_15-30-00.tar.gz`
 
 - `/mnt/hdexterno/meubanco_backup_11-05-2025_15-30-00.sql.gz`
+
+---
 
 ## 🛑 Observações Importantes
 
@@ -75,6 +81,8 @@ Certifique-se de que o dispositivo de destino (HD externo, partição, etc.) est
 
 O script ignora os bancos padrão do MySQL (`information_schema`, `performance_schema`, etc.).
 
+---
+
 ## 🧪 Testado em:
 
 Ubuntu Server 20.04 / 22.04
@@ -83,9 +91,13 @@ Debian 11+
 
 MySQL 5.7 / 8.0
 
+---
+
 ## 📄 Licença
 
 Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://teste.com) para mais detalhes.
+
+---
 
 ## 👨‍💻 Autor
 

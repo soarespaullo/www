@@ -95,7 +95,7 @@ MySQL 5.7 / 8.0
 
 ## 📄 Licença
 
-Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://teste.com) para mais detalhes.
+Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/soarespaullo/www/blob/main/LICENSE) para mais detalhes.
 
 ---
 

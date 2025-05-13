@@ -8,7 +8,7 @@ Este script realiza o **backup automático da pasta `/var/www` e de todos os ban
 
 - Backup da pasta `/var/www` com compactação `.tar.gz`
 - Backup individual de todos os bancos de dados MySQL
-- Barra de progresso com `pv`
+- Barra de progresso com [`pv`](https://linux.die.net/man/1/pv)
 - Verificação de espaço em disco antes de cada backup
 - Interface interativa com validações e feedback em cores
 - Criação automática do diretório de destino, se necessário

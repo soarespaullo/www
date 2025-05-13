@@ -32,7 +32,7 @@ SEM_COR="\e[0m"   # SEM COR
 # === VERIFICA SE É ROOT ===
 if [[ "$EUID" -ne 0 ]]; then
   echo -e "${VERMELHO}Este script deve ser executado como root.${SEM_COR}"
-  echo -e "${AMARELO}Execute como:${SEM_COR} sudo ./www.sh"
+  echo -e "${AMARELO}Execute como:${SEM_COR} sudo ./backup_system.sh"
   exit 1
 fi
 
@@ -94,14 +94,14 @@ echo -e "${VERDE}Backup da pasta /var/www concluído.${SEM_COR}"
 echo -e "${VERDE}Iniciando backup de todos os bancos de dados MySQL...${SEM_COR}"
 
 # Recupera todos os bancos de dados
-DATABASES=$(mysql -e "SHOW DATABASES;" -s --skip-column-names | grep -Ev "(information_schema|performance_schema|mysql|sys)")
+DATABASES=$(mysql --defaults-extra-file=/root/.my.cnf -e "SHOW DATABASES;" -s --skip-column-names | grep -Ev "(information_schema|performance_schema|mysql|sys)")
 
 for DB in $DATABASES; do
   echo -e "${VERDE}Realizando backup do banco de dados: $DB${SEM_COR}"
   DUMP_FILE="/tmp/${DB}_dump.sql"
 
   # Faz o dump do banco de dados
-  mysqldump -u root -p --databases "$DB" > "$DUMP_FILE"
+  mysqldump --defaults-extra-file=/root/.my.cnf --databases "$DB" > "$DUMP_FILE"
   if [[ $? -ne 0 ]]; then
     echo -e "${VERMELHO}Erro ao gerar o dump do banco $DB.${SEM_COR}"
     exit 1

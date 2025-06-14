@@ -108,4 +108,4 @@ Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://
 
 - 💻 [**GitHub**](https://github.com/soarespaullo)
 
-- 🐞 [**NotABug**](https://notabug.org/soarespaullo
+- 🐞 [**NotABug**](https://notabug.org/soarespaullo)

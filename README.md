@@ -102,8 +102,10 @@ Este projeto é licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://
 
 **Paulo Soares**
 
-- 📧 [soarespaullo@proton.me](mailto:soarespaullo@proton.me)
+- 📧 [**soarespaullo@proton.me**](mailto:soarespaullo@proton.me)
 
-- 💬 [@soarespaullo](https://t.me/soarespaullo) no Telegram
+- 💬 [**@soarespaullo**](https://t.me/soarespaullo) no Telegram
 
-- 💻 [GitHub](https://github.com/soarespaullo)
+- 💻 [**GitHub**](https://github.com/soarespaullo)
+
+- 🐞 [**NotABug**](https://notabug.org/soarespaullo

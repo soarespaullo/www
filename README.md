@@ -41,7 +41,7 @@ password=SUASENHA
 1. **Clone o repositório:**
 
 ```
-git clone https://github.com/seuusuario/seurepo.git
+git clone https://github.com/soarespaullo/www.git
 ```
 
 2. **Dê permissão de execução ao script:**
